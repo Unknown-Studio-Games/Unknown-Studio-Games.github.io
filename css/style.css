@@ -1,0 +1,113 @@
+html {
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+}
+body {
+    background: rgba(143, 36, 193, 1);
+    
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+section {
+    position: relative;
+    margin: 10rem 0;
+    padding: 10rem;
+}
+section:first-child {
+    margin-top: 0;
+    padding: 0;
+}
+
+/*
+    SECTION - BANNER
+*/
+section.banner {
+    background: rgb(84,53,203);
+    width: 100%;
+}
+section.banner::after {
+    content: '';
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 10rem;
+    background: linear-gradient(0deg, rgba(143, 36, 193, 1) 0%, rgba(143, 36, 193, 0) 100%);
+}
+
+section.banner .banner-image {
+    background: rgb(84,53,203);
+    position: relative;
+    display: inline-block;
+}
+section.banner .banner-image::before,
+section.banner .banner-image::after {
+    content: '';
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    bottom: 0;
+    width: 15rem;
+}
+section.banner .banner-image::before {
+    left: 0;
+    background: linear-gradient(90deg, rgba(84,53,203, 1) 0%, rgba(84,53,203, 0) 100%);
+}
+section.banner .banner-image::after {
+    right: 0;
+    background: linear-gradient(90deg, rgba(84,53,203, 0) 0%, rgba(84,53,203, 1) 100%);
+}
+
+section.banner img {
+    width: 100%;
+    max-width: 1200px;
+}
+section.banner img.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/*
+    SECTION - SLOGAN
+*/
+section.slogan h1 {
+    font-size: 5rem;
+    font-weight: bold;
+    color: rgb(173, 229, 255);
+}
+
+/*
+    SECTION - FOOTER
+*/
+section.footer {
+    border-top: 1px solid rgb(84, 53, 203);
+    background-color: rgb(73, 136, 230);
+    margin-bottom: 0;
+    font-size: 160%;
+}
+
+section.footer span {
+    display: block;
+    padding: .5rem 0;
+}
+
+section.footer span i {
+    margin-right: 1rem;
+}
+section.footer span,
+section.footer span a {
+    color: rgb(57, 64, 71);
+    text-decoration: none;
+}
+section.footer span a {
+    transition: color .2s ease-in;
+}
+section.footer span a:hover {
+    color: rgb(0, 0, 0);
+}
