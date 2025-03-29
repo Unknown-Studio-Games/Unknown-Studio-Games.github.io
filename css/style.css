@@ -16,6 +16,7 @@ section {
     padding: 16vw 7vw;
 }
 section:first-child {
+    height: 80vh;
     margin-top: 0;
     padding: 0;
 }
@@ -26,6 +27,9 @@ section:first-child {
 section.banner {
     background: rgb(84,53,203);
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 section.banner::after {
     content: '';
@@ -43,34 +47,17 @@ section.banner .banner-image {
     position: relative;
     display: inline-block;
 }
-section.banner .banner-image::before,
-section.banner .banner-image::after {
-    content: '';
-    position: absolute;
-    z-index: 10;
-    top: 0;
-    bottom: 0;
-    width: 15vw;
-}
-section.banner .banner-image::before {
-    left: 0;
-    background: linear-gradient(90deg, rgba(84,53,203, 1) 0%, rgba(84,53,203, 0) 100%);
-}
-section.banner .banner-image::after {
-    right: 0;
-    background: linear-gradient(90deg, rgba(84,53,203, 0) 0%, rgba(84,53,203, 1) 100%);
-}
-
 section.banner img {
     width: 100%;
     max-width: 1200px;
 }
 section.banner img.background {
     position: absolute;
-    top: 0;
+    top: 50%;
     left: 0;
     right: 0;
     bottom: 0;
+    transform: translateY(-50%);
 }
 
 /*
@@ -110,4 +97,14 @@ section.footer span a {
 }
 section.footer span a:hover {
     color: rgb(0, 0, 0);
+}
+
+@media (max-width: 576px) { 
+    section.footer > div > div{
+        margin: 2rem;
+    }
+    section.footer > span {
+        margin: 2rem;
+        font-size: 4vw;
+    }
 }
