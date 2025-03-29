@@ -12,8 +12,8 @@ body {
 
 section {
     position: relative;
-    margin: 10rem 0;
-    padding: 10rem;
+    margin: 16vw 0;
+    padding: 16vw 7vw;
 }
 section:first-child {
     margin-top: 0;
@@ -34,7 +34,7 @@ section.banner::after {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 10rem;
+    height: 15vw;
     background: linear-gradient(0deg, rgba(143, 36, 193, 1) 0%, rgba(143, 36, 193, 0) 100%);
 }
 
@@ -50,7 +50,7 @@ section.banner .banner-image::after {
     z-index: 10;
     top: 0;
     bottom: 0;
-    width: 15rem;
+    width: 15vw;
 }
 section.banner .banner-image::before {
     left: 0;
@@ -77,7 +77,7 @@ section.banner img.background {
     SECTION - SLOGAN
 */
 section.slogan h1 {
-    font-size: 5rem;
+    font-size: 8vw;
     font-weight: bold;
     color: rgb(173, 229, 255);
 }
@@ -89,7 +89,7 @@ section.footer {
     border-top: 1px solid rgb(84, 53, 203);
     background-color: rgb(73, 136, 230);
     margin-bottom: 0;
-    font-size: 160%;
+    font-size: 2vw;
 }
 
 section.footer span {
